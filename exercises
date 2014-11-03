@@ -26,3 +26,54 @@ else
   grade = 'A';
   
 16.
+a)
+	public static double getOrderTotal(int bp, int nb)
+	{
+		double getOrderTotal;
+		if (bp==1 && nb==1)
+			getOrderTotal=37.95;
+		else if (bp+nb >=12)
+			getOrderTotal=14*(bp+nb);
+		else if (bp+nb >=3)
+			getOrderTotal=15.95*(bp+nb);
+		else
+			getOrderTotal=bp*18.95 + nb*21.95;
+		
+		return getOrderTotal;
+	}
+
+b)
+package litvin7;
+
+import java.util.Scanner;
+
+public class TestPrepBooks {
+	
+	public static double getOrderTotal(int bp, int nb)
+	{
+		double getOrderTotal;
+		if (bp==1 && nb==1)
+			getOrderTotal=37.95;
+		else if (bp+nb >=12)
+			getOrderTotal=14*(bp+nb);
+		else if (bp+nb >=3)
+			getOrderTotal=15.95*(bp+nb);
+		else
+			getOrderTotal=bp*18.95 + nb*21.95;
+		
+		return getOrderTotal;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Enter copies of Be Prepared: ");
+		Scanner keyboard = new Scanner(System.in);
+		int bp= keyboard.nextInt();
+		System.out.println("Enter copies of Next Best: ");
+		int nb= keyboard.nextInt();
+		
+		System.out.println("Order total is " +getOrderTotal(bp,nb));
+
+	}
+
+}
+
