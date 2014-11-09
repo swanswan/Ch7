@@ -1,0 +1,15 @@
+7.a) !(!x || !y) || !(a || b)
+b) if (x<7)
+
+8. a) if (x+2 > a || x-2< b && y >= 0)
+b) if (a>= b && a >= c && a%2 == 0)
+
+10.
+if (!(a==0) && !(b==0) && !(c==0) && ((double)a)/b == ((double)b)/c)
+  return true;
+else
+  return false;
+
+11. 
+a) boolean inside = x>left && x>right && y>top && y>bottom;
+b) boolean no = ((ch[0] == 'N' || ch[0] == 'n') && (ch[1]== 'O' || ch[1]== 'o'));
